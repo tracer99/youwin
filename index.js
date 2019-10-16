@@ -20,7 +20,6 @@ var params = {
 
 async function getResult() {
     var result = (await random.generateIntegers(params)).random.data[0];
-    console.log(result);
     var winner = config.pool[result-1];
     console.log(winner);
 }
